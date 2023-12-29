@@ -20,6 +20,9 @@ async function handleInteraction(interaction) {
     if (!interaction.isCommand()) return;
     if (interaction.commandName ==='speak') {
         await speakCommand.execute(interaction);
+    if (interaction.commandName ==='cowsay') {
+        await cowsay.execute(interaction)
+    }
     }
 }
 
